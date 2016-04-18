@@ -1,0 +1,82 @@
+'scopeName': 'source.helen'
+'name': 'Helen'
+'fileTypes': ['f4', 'f4i']
+
+'patterns': [
+    {
+        'begin': '#'
+        'end': '\\n'
+        'name': 'comment.line.number-sign.helen'
+    }
+    {
+        'match': '\\b(([0-9]+(\\.\\,)?[0-9]+)|([0-9]+))\\b'
+        'name': 'constant.numeric.helen'
+    },
+    {
+        'begin': '\\"'
+        'end': '\\"'
+        'name': 'string.quoted.double.helen'
+    },
+    {
+        'match': '\\b(int|real|char|logical|ptr)\\b'
+        'name': 'storage.type.helen'
+    }
+    {
+        'match': '\\b(String|Array)\\b'
+        'name': 'support.class.helen'
+    }
+    {
+        'match': '\\b(if|endif|loop|endloop|endfun|endtype|return)\\b'
+        'name': 'keyword.control.helen'
+    }
+    {
+        'match': '\\b(in|out)\\b'
+        'name': 'keyword.operator.helen'
+    }
+    {
+        'match': '\\b(this)\\b'
+        'name': 'support.variable.helen'
+    }
+    {
+        'match': '\\s*(fun|declare)\\s+(\\w+)\\s*\\('
+        'captures':
+            '1':
+                'name': 'keyword.control.helen'
+            '2':
+                'name': 'entity.name.function.helen'
+        'name': 'meta.function.helen'
+    }
+    {
+        'match': '\\s*(fun|declare)\\s+(constructor|destructor)\\s+(\\w+)\\s*\\('
+        'captures':
+            '1':
+                'name': 'keyword.control.helen'
+            '2':
+                'name': 'keyword.other.helen'
+            '3':
+                'name': 'entity.name.type.helen'
+        'name': 'meta.function.cdtor.helen'
+    }
+    {
+        'match': '\\s*(type)\\s+(\\w+)(\\s+:)?(\\s+\\w+)?'
+        'captures':
+            '1':
+                'name': 'keyword.control.helen'
+            '2':
+                'name': 'entity.name.type.helen'
+            '3':
+                'name': 'keyword.operator.helen'
+            '4':
+                'name': 'entity.other.inherited-class.helen'
+        'name': 'meta.type.helen'
+    }
+    {
+        'match': '\\b(method)\\((\\w+)\\)'
+        'captures':
+            '1':
+                'name': 'keyword.other.helen'
+            '2':
+                'name': 'entity.name.type.helen'
+        'name': 'meta.function.method.helen'
+    }
+]

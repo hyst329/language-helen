@@ -1,0 +1,18 @@
+{
+  "name": "language-helen",
+  "main": "./lib/language-helen",
+  "version": "0.0.0",
+  "description": "Helen language support in Atom",
+  "keywords": [
+  ],
+  "repository": "https://github.com/hyst329/language-helen",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  },
+  "activationCommands": {
+    "atom-workspace": "language-helen:helmake"
+  }
+}

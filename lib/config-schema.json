@@ -1,0 +1,27 @@
+{
+  "helcPath": {
+    "description": "Path to Helen compiler",
+    "type": "string",
+    "default": "helc"
+  },
+  "helmakePath": {
+    "description": "Path to Helmake build system",
+    "type": "string",
+    "default": "helmake"
+  },
+  "llcPath": {
+    "description": "Path to LLVM's static compiler",
+    "type": "string",
+    "default": "llc"
+  },
+  "gccPath": {
+    "description": "Path to GCC (used as a linker)",
+    "type": "string",
+    "default": "gcc"
+  },
+  "makePath": {
+    "description": "Path to GNU Make",
+    "type": "string",
+    "default": "make"
+  }
+}

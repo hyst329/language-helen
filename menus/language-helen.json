@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Run Helmake",
+        "command": "language-helen:helmake"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Helen language",
+          "submenu": [
+            {
+              "label": "Run Helmake",
+              "command": "language-helen:helmake"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
