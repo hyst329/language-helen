@@ -9,6 +9,15 @@
         'name': 'comment.line.number-sign.helen'
     }
     {
+        'begin': '^\\s*(include)'
+        'beginCaptures':
+            '1':
+                'name': 'keyword.control.helen'
+        'end': '\\n'
+        'name': 'meta.include.helen'
+        'contentName': 'string.unquoted.helen'
+    }
+    {
         'match': '\\b(([0-9]+(\\.\\,)?[0-9]+)|([0-9]+))\\b'
         'name': 'constant.numeric.helen'
     },
@@ -26,7 +35,8 @@
         'name': 'support.class.helen'
     }
     {
-        'match': '\\b(if|endif|loop|endloop|endfun|endtype|return)\\b'
+        'match': '\\b(if|endif|loop|endloop|endfun|endtype
+                     |return|mainmodule|shiftby)\\b'
         'name': 'keyword.control.helen'
     }
     {
@@ -58,6 +68,19 @@
         'name': 'meta.function.cdtor.helen'
     }
     {
+        'match': '\\s*(fun|declare)\\s+(operator)\\s*
+                  [\\+\\-\\*\\/\\<\\>\\=@\\&\\|\\~\\!]+\\s*\\('
+        'captures':
+            '1':
+                'name': 'keyword.control.helen'
+            '2':
+                'name': 'keyword.other.helen'
+            '3':
+                'name': 'keyword.operator.helen'    
+
+        'name': 'meta.function.operator.helen'
+    }
+    {
         'match': '\\s*(type)\\s+(\\w+)(\\s+:)?(\\s+\\w+)?'
         'captures':
             '1':
@@ -78,5 +101,14 @@
             '2':
                 'name': 'entity.name.type.helen'
         'name': 'meta.function.method.helen'
+    }
+    {
+        'match': '\\b(style)\\((\\w+)\\)'
+        'captures':
+            '1':
+                'name': 'keyword.other.helen'
+            '2':
+                'name': 'string.unquoted.helen'
+        'name': 'meta.function.style.helen'
     }
 ]
