@@ -1,7 +1,7 @@
 {
   "name": "language-helen",
   "main": "./lib/language-helen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Helen language support in Atom",
   "keywords": [],
   "repository": "https://github.com/hyst329/language-helen",
